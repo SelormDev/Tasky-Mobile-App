@@ -53,12 +53,12 @@ class OverView extends StatelessWidget {
                     snapshot.data!.data!.isEmpty) {
                   return const SizedBox.shrink();
                 }
-                if (snapshot.connectionState == ConnectionState.done &&
-                    snapshot.data!.data![0].todo == 0 &&
-                    snapshot.data!.data![0].inProgress == 0 &&
-                    snapshot.data!.data![0].completed == 0) {
-                  return const SizedBox.shrink();
-                }
+                // if (snapshot.connectionState == ConnectionState.done &&
+                //     snapshot.data!.data![0].todo == 0 &&
+                //     snapshot.data!.data![0].inProgress == 0 &&
+                //     snapshot.data!.data![0].completed == 0) {
+                //   return const SizedBox.shrink();
+                // }
 
                 return Column(
                   children: [
